@@ -1,15 +1,13 @@
-# Loripsum::Wrapper
+# Loripsum::client
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/loripsum/wrapper`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby client for <loripsum.net>
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'loripsum-wrapper'
+gem 'loripsum-client'
 ```
 
 And then execute:
@@ -18,11 +16,25 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install loripsum-wrapper
+    $ gem install loripsum-client
 
 ## Usage
 
-TODO: Write usage instructions here
+    Usage: loripsum.rb [options]
+        -n, --number [NUMBER]            The number of paragraphs to generate
+        -l, --length [LENGTH]            The average length of a paragraph
+        -p, --decorate                   Add bold, italic, and marked text
+        -a, --links                      Add links
+        -u, --unordered-lists            Add unordered lists
+        -o, --ordered-lists              Add ordered lists
+        -d, --description-lists          Add description lists
+        -b, --block-quotes               Add blockquotes
+        -c, --code-samples               Add code samples
+        -h, --headers                    Add headers
+        -C, --all-caps                   Use ALL CAPS
+        -s, --prude                      Prude version
+        -t, --text                       Return plain text, no HTML
+
 
 ## Development
 
@@ -32,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/loripsum-wrapper.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nycjv321/loripsum-client.
 
 
 ## License
