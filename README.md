@@ -1,6 +1,6 @@
-# Loripsum::client
+# lorem ipsum!
 
-Ruby client for <loripsum.net>
+Ruby client for loripsum.net
 
 ## Installation
 
