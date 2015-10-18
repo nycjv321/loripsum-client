@@ -2,6 +2,11 @@
 
 Ruby client for loripsum.net
 
+[![Gem Version](https://badge.fury.io/rb/loripsum-client.svg)](https://badge.fury.io/rb/loripsum-client)
+[![Codacy Badge](https://api.codacy.com/project/badge/31b22da6d87144b7921235022dbfcd5c)](https://www.codacy.com/app/nycjv321/loripsum-client)
+[![Code Climate](https://codeclimate.com/github/nycjv321/loripsum-client/badges/gpa.svg)](https://codeclimate.com/github/nycjv321/loripsum-client)
+[![Build Status](https://travis-ci.org/nycjv321/loripsum-client.svg)](https://travis-ci.org/nycjv321/loripsum-client)
+[![Test Coverage](https://codeclimate.com/github/nycjv321/loripsum-client/badges/coverage.svg)](https://codeclimate.com/github/nycjv321/loripsum-client/coverage)
 ## Installation
 
 Add this line to your application's Gemfile:
