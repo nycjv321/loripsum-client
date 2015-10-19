@@ -15,7 +15,7 @@ describe Loripsum::Client do
       ARGV = %w(-t)
       expect(Loripsum::Client.generate).to_not include('<p>')
     end
-    it 'gets lorem ipsum with a specified length' do
+    it 'gets lorem ipsum with code samples' do
       ARGV = %w(-c)
       html_doc = Nokogiri::HTML(Loripsum::Client.generate)
       expect(html_doc.css('pre').size).to be > 0
@@ -40,22 +40,11 @@ describe Loripsum::Client do
       html_doc = Nokogiri::HTML(Loripsum::Client.generate)
       expect(html_doc.css('blockquote').size).to be > 0
     end
-    it 'gets lorem ipsum with a specified length' do
+    it 'gets lorem ipsum as a hash that includes a header and a body' do
       ARGV = %w(-h)
       output = Loripsum::Client.generate
       expect(output[:header]).to_not be_empty
       expect(output[:body]).to_not be_empty
-    end
-  end
-end
-
-describe Loripsum::OptionsParser do
-  describe '.parse!' do
-    it 'checks for valid length arguments' do
-      ARGV = []
-      ARGV << '-l'
-      ARGV << 'invalid'
-      expect{Loripsum::OptionsParser.parse!}.to raise_error(RuntimeError)
     end
   end
 end
